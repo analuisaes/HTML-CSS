@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulo 10</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>É um link que vai daqui para o site de outra pessoa.</p>
+    <p>Para um link externo, você envelopa a frase desejada para "virar um link" e digita a, vai se tornar um código &lt;a href="link"&gt;Nome do link&lt;/a&gt; ex:</p>
+    <p>Você pode acessar o <a href="https://pegaxy.io/">jogo Pegaxy</a></p>
+    <p>Para o link ser aberto em outra janela e não apagar o seu site, basta colocar os parâmetros <i>targe=_"blank"</i> -- Para abrir em outra janela e <i>rel="external"</i> -- Para mostrar que é um link externo.(Isso é importante para quando o outro site não é seu)</p>
+    <p>Você pode acessar o <a href="https://pegaxy.io/" target="_blank" rel="external">jogo Pegaxy</a></p>
+    <p>Você pode acessar o canal do <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank" rel="external" >Curso em Vídeo</a></p>
+    <h1>Usando links internos</h1>
+    <p>É um link que vai daqui para outro site seu.</p>
+    <p>Deve-se criar outro arquivo dentro da mesma pasta do arquivo padrão. ex:</p>
+    <p>Está é a primeira página do site, se você quiser pode acessar também, a minha <a href="pag002.html" rel="next">segunda página</a>.</p>
+    <p>Já nesse tipo de link, é importante usar  parâmetro <i>rel="next"</i> para indicar que vai para a segunda página</p>
+    <p>Você também pode acessar a nossa <a href="Noticias/pag003.html" rel="next">página de notícias</a></p>
+    <p>Quando os links são internos, não é necessário que coloque o parâmetro <i>target="_blank"</i>, porque não tem nessecidade da página ser aberta em outro site, aí, ou você não coloca nada, ou coloca <i>target="_self"</i></p>
+    <h1>Links para dowload</h1>
+    <ul>
+        <li>Baixar o livro <a href="Livro/O jeito Havard de Ser Feliz.zip">O Jeito Havard de ser Feliz</a> em PDF</li>
+    </ul>
+</body>
+</html>

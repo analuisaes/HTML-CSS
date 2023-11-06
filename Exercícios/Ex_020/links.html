@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none; /*Tirar o sublinhado dos links*/
+        }
+        a:visited{ /*Link visitado*/
+            color: darkred
+        }
+        a:hover{ /*Quando passar o mouse por cima*/
+            color: black;/*Vai ficar preto*/
+            text-decoration: underline;/*Vai ficar sublinhado*/
+        }
+        a:active{/*A cor dele ativo, o link que quando é clicado */
+            color: yellow;/*Fica amarelo*/
+        }
+        /*Pseudo-Elementos*/
+        a::after{ /*Depois de todos os links*/
+            content: '(link)'; /*Vai avisar que é um link*/
+            text-decoration: none; /*Sem sublinhado*/
+            font-weight: normal; /*Espessura da palavra, se vai ser negrito ou normal para não negrito*/
+            color: darkgray; /*Cor da fonte*/
+        }
+        a::before{ /*Antes*/
+            content: '☀'; /*Sol antes do link*/
+            color: black;
+        }
+        .especial::after{ /*Tudo que for da classe especial vai ter depois*/
+            content: '☀'; /*Um sol*/
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+        .especial{/*Tudo que for da classe especial vai ter*/
+            background-color: pink;/*Fundo rosa*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <h2>Pseudo-Classes</h2>
+    <p>Pseudo-Classes são palavras que definem o estado do elemento dentro da HTML. Pseudo-Classes vai ser sempre (:)</p>
+        <ul>
+        <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório Github</a></li>
+        <li><a href="https://youtube.com/cursoemvideo/" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com" target="_blank" class="especial">Site do Curso em Vídeo</a></li>
+    </ul>
+    <h2>Pseudo-Elementos</h2>
+    <p>Pseudo-Elemento, pode agir nas classes, no elemento, no id, eles mexem no conteúdo periférico do elemento. Pseudo-Elementos vai ser sempre (::)</p>
+    <h1>Alguns símbolos que podem ser usados nas CSS para criar seletores personalizados</h1>
+    <ul type="circle">
+        <li><strong>#</strong>  = id</li>
+        <li><strong>.</strong>  = class</li>
+        <li><strong>:</strong>  = pseudo-class</li>
+        <li><strong>::</strong> = pseudo-elementos</li>
+        <li><strong>></strong>  = children (filho)</li>
+    </ul>
+</body>
+</html>

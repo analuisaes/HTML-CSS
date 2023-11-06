@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>É muito importante adaptar o tamanho da imagem no tamanho da tela do usuário. A tag &lt;picture&gt; permite que você coloque imagens. Para uma imagem não ficar muito maior do que deveria na tela do pc, dentro ta tag &lt;picture&gt;, coloque uma tag &lt;source:media:sizes&gt;.Dentro dos parênteses,coloque max, e depois dos dois pontos, se a tela do pc for menor que 1000px, ele vai carregar a foto m. Assim: &lt;source media=(<i>max</i>-width: 1000px)"...&gt;</p>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou aumente e diminua o tamanho do seu navegador.</p>
+    <p>A tag &lt;source:media:sizes&gt; tem a seguinte função: o site vai carregar a tela g(grande), mas, se o tamanho da tela for menor que 1000px(caso necessário aumente este número mais 50.), dentro de source é colocada a imagem m(média). e também pode ser colocada a imagem p(pequena). As imagens devem estar em ordem crescente.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <audio src="midia/camisa10.mp3.mpeg" autoplay controls></audio>
+    <p>Para colocar áudio em HTML5, deve-se usar a tag &lt;audio&gt; e os parâmetros <i>controls</i>(para o controle de áudio aparecer) e <i>autoplay</i>(para reproduzir o áudio)</p>
+    <p>Existem muitos navegadores que não são compátiveis com o MP3, então pode ser utilizado outros formatos de arquivo, como MPEG, OGG e WAV. Mas, para isso ser possível, deve ser usado o formato MP3. Se você quiser ter compatibilidade 100% com todos os navegadores, é importante ter outras formas de adicionar o áudio para dar para o site todas as chances para ser possível que ele seja reproduzido. A ordem de tentativas deve ser crescente. Abaixo, tem uma opção de baixar o arquivo caso o navegador do usuário não consiga carregar o arquivo que deveria, então, é para ser colocada essa opção de baoxar dentro da tag &lt;audio&gt;. Para ativar o <i>autoplay</i>, é importante por o parâmetro <i>preload</i> dentro da tag &lt;audio&gt;.<br>
+    Esta, tem 3 opções:<br>
+    <ul>
+        <li>Auto --> Ele só vai considerar que o site terminou de carregar, depois que carregar todo o áudio também.(não indicado);</li>
+        <li>Metadata --> Vai carregar só o nome do arquivos e outras coisas;</li>
+        <li>None --> Não vai carregar nada, só quando o usuário apertar play no controle.</li>
+    </ul>
+    Pode ser colocado <i>auto</i> se tiver o parâmetro <i>autoplay</i>.
+    </p>
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/camisa10.mp3.mpeg" type="audio/mpeg">
+        <source src="midia/camisa10.ogg" type="audio/ogg">
+        <source src="midia/camisa10.wav" type="audio/wav">
+        <p>Tente evitar usar aquivos do tipo wav, porque são arquivos muito pesados. Isso vai pesar também no seu site. Qualidade top é para aquivos para baixar e nãopara navegar.</p>
+        <p>Infelizmente, seu navegador não consegue reproduzir este áudio.<a href="midia/camisa10.mp3">Clique aqui para baixar o arquivo.</a></p>
+    </audio>
+</body>
+</html>

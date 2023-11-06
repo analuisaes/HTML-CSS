@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Para criar uma lista ordenada, devemos usar a tag &lt;ol&gt; para ordenar e dentro da tag &lt;ol&gt;, devemos colocar uma tag &lt;li&gt; que são os itens da lista. Não existe orbigação para colocar a tag &lt;/li&gt;. Com a <i>type</i>, é possível ter opções de formatação da lista, (1 A a I i). E com <i>start</i>, posso colocar o que eu quero no topo da lista.</p>
+    <ol>
+        <li>Acordar</li>
+        <li>Tomar banho</li>
+        <li>Comer</li>
+        <li>Sair</li>
+        <li>Ir para o curso</li>
+        <li>Ir para casa</li>
+        <li>Estudar</li>
+        <li>Dormir</li>
+        <h2>Listas não ordenadas</h2>
+        <p>Para listas não prdenadas, crio a tag &lt;ul&gt;. Com <i>type</i> dá para escolher a formatação da lista. (Disc, clircle, square</p>
+        <ul>
+            <li>Biscoito</li>
+            <li>Toddy</li>
+            <li>Leite Condensado</li>
+            <li>Margarina</li>
+        </ul>
+    </ol>
+    <h2>Juntando listas versão 1.0</h2>
+    <p>É um processo que se chama <i>aninhamento</i>, ou seja, é colocado lista dentro de lista. ex:</p>
+    <h3>Lista Aninhada ordenada:</h3>
+    <h4>Coisas que gosto de comer:</h4>
+    <ol>
+        <li>Comidas salgadas:</li>
+            <ol type="I">
+                <li>Lasanha</li>
+                <li>Pizza</li>
+                <li>Strogonoff</li>
+                <li>Tomate</li>
+            </ol>
+        <li>Comidas doces:</li>
+            <ol type="I">
+                <li>Brigadeiro</li>
+                <li>Pizza doce</li>
+                <li>Doce de leite</li>
+                <li>Kit Kat</li>
+            </ol>
+    </ol>
+    <h3>Lista Aninhada não ordenada:</h3>
+    <h4>Coisas que gosto de comer:</h4>
+    <ol>
+        <li>Comidas salgadas:</li>
+            <ul>
+                <li>Lasanha</li>
+                    <ul>
+                        <li>de frango</li>
+                        <li>Com creme de leite</li>
+                    </ul>
+
+                <li>Pizza</li>
+                    <ol>
+                        <li>catupiry</li>
+                        <li>alho</li>
+                    </ol>
+                <li>Strogonoff</li>
+                <li>Tomate</li>
+            </ul>
+        <li>Comidas doces:</li>
+            <ul>
+                <li>Brigadeiro</li>
+                <li>Pizza doce</li>
+                <li>Doce de leite</li>
+                <li>Kit Kat</li>
+            </ul>
+    </ol>
+    <h2>Lista de definição</h2>
+    <p>Para criar uma lsta de definição, vamos usar a tag &lt;dt&gt; e a tag &lt;dd&gt;. A tag dt é o termo, e a tag dd é a definição do termo. Ex:</p>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação de conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a criação de design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+</body>
+</html>

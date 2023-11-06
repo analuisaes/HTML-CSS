@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{/*BOX-LEVEL*/
+           background-color: lightgray; 
+           /*Assim, dá para observar no site, que h1 é um modelo box-level, ocupa todo o comprimento da tela, a altura é de acordo com o tamanho da letra*/
+           height: 300px; /*Altura*/
+           /*Já se eu altero a altura e largura, pode-se perceber que o fundo fica mais alto e mais largo, do tamanho mesmo de uma ciaxa, se você ir na caixa do DevTools, vai perceber que fica lá do tamanaho que eu alterei*/
+           width: 300px; /*Largura*/
+
+            /*
+            Shorthands = são propriedades com múltiplos valores para facilitar nossa vida, todos os comandos são escritos em uma linha só, mas deve-se seguir a ordem. Se todas as propriedades tiverem o mesmo valor, basta colocar apenas uma vez. 
+            - Então, quando coloca 4 valores, é a configuração do de cima, da direita, de baixo e da esquerda.
+            - Quando coloca um único valor, é a congiguração de todos os lados iguais.
+            - Quando coloca dois valores, o de cima e o de baixo ficam iguais e o da esqueda e o da direita também ficam iguais.
+            */
+            
+            border-width: 10px; /*Espessura da borda */
+            border-style: solid;
+            border-color: darkslategray;
+
+            border: 10px solid darkslategray; /*shorthand*/
+
+            padding-top: 10px; /*Em cima*/
+            padding-right: 10px; /*Na direita*/
+            padding-bottom: 10px; /*Em baixo*/
+            padding-left: 10px; /*Na esquerda*/
+            /*É bom mexer no sentindo horário, começando do topo.*/
+
+            padding: 10px; /*shothand (tá apenas um valor porque o valor de todas as prpriedades são iguais, assim basta colocar apenas uma vez)*/
+
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 40px;
+            margin-left: 10px;
+
+            /*(margin:auto;)Faz com que uma caixa centralize horizoltalmente*/
+
+            margin:10px 10px 40px 10px; /*shorthand*/
+
+            /*(margin:10px auto 40px auto;) Para centralizar a margem esquerda e direita da caixa*/
+
+            outline-width: 5px; /*É um tracejado que tem dentro da margem, então não fica maior que a margem*/
+            outline-style: dashed;
+            outline-color: blueviolet;
+
+            outline:5px dashed blueviolet; /*shorthand*/
+
+        }
+        a{/*INLINE-LEVEL*/
+            border-width: 10px;
+            border-style: solid; /*Tem como ver todos estilos de bordas na hora de alterar pelo Tools*/
+            border-color: red;
+
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px; 
+            padding-left: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/16%20-%20Modelo%20de%20Caixas.pdf" target="_blank">links são exemplos de caixas inline-level</a>, vamos ver como tudo isso funciona.</p>
+    <hr>
+    <h2>Usando DevTools no google</h2>
+    <p>No google, clicar com o botão direito, clicar em inspecionar. Vai abrir o DevTools, o mesmo, geralmente abre em elementos, para o que vai ser feito, ir em Elementos, aparece o modelo de ciaxas do site. Quando você clica em algum elemento, na parte de baixo, da para ver todas as configuraç~oes de CSS que já exixstem para ele, mesmo os que são feitos autamticamente. User agente, é o navegador que está exibindo o conteúdo, todo navegador tem uma configuração básica de CSS que é seguida por todos eles</p>
+    <h3>Explicando algumas função do estilo padrão de CSS deste site aqui(no caso do h1).</h3>
+    <pre>
+        <code>
+            h1 {
+                display: block; /*um eleemnto do tipo box-level, o display pode ser mudado por outros valores*/
+                font-size: 2em; /*Duas vezes o tamanho original*/
+                margin-block-start: 0.67em;
+                margin-block-end: 0.67em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+                font-weight: bold;
+            }
+        </code>
+    </pre>
+    <p>É possível alterar as configurações do site direto pelo DevTools, sem ter que ir para o arquivo original, deve-se selecionar o elento, clicar na propriedade que é para ser alterada, lá em baixo em styles, ái da para alterar na mão, colocando o valor desejado, ou girar a rodinha do mouse, aí altera do jeito que a gente quer. Isso não altera o arquivo original, só o arquivo visível.</p>
+    <p>Lá no DevTools, na aba "computed", é possível ver o display, se é block para box-level ou se é inline para inline-level. Isso é alterável, se quiser alterar, basta dentro do seletor no CSS colocar <code>display:inline;</code> ou <code>display:block;</code>. Quando é inline não dá para fazer altura e largura. É possível também fazer <code>display:inline-block;</code>, assim ele vai ser inline mas vai ter características de bloco, podendo ser mudado o tamanho, altura, largura, entre outras coisas.</p>
+</body>
+</html>

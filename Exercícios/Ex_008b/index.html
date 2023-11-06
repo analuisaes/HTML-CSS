@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / Pré formatado</h2>
+    <p>Código fonte são comandos. Por exemplo: o comando document.getelements.id(teste) é um comando escrito, em linguagem Java Script. Essa fonte não reserva o mesmo espaço lateral para cada letra. Usando a tag &lt;code&gt;&lt;code&gt; é possível deixar o comando numa forma mais simples de ser lido. Veja: <code>document.getelements.id(teste). A fonte monoespaçada serve para escrever códigos com todas as letras do mesmo tamanho facilitando a leitura.</code></p>
+    <p>Quando se usa a tag &lt;pre&gt;, é considerado todos os espaços do jeitinho que eu coloco e organizo neste programa. por exemplo:</p>
+    <p>Sem a &lt;tag&gt; pre e só coma tag &lt;code&gt;:</p>
+    <code>
+        #include &lt;iostream&gt;
+        using namespace std;
+        int main ()
+        {
+        int value, pow, result=1;
+        cout << "Por favor insira o operando:" << endl;
+        cin >> value;
+        cout << "Por favor insira o expoente:" << endl;
+        cin >> pow;
+        for (int cnt=0; cnt!=pow; cnt++)
+        result*=value;
+        cout << value << " à potência de " << pow << " é: " << result << endl;
+        return 0;
+        }
+    </code>
+    <p>Com a tag &lt;pre&gt;:</p>
+    <pre>
+        <code>
+            #include &lt;iostream&lt;
+                using namespace std;
+                int main ()
+                {
+                int value, pow, result=1;
+                cout << "Por favor insira o operando:" << endl;
+                cin >> value;
+                cout << "Por favor insira o expoente:" << endl;
+                cin >> pow;
+                for (int cnt=0; cnt!=pow; cnt++)
+                result*=value;
+                cout << value << " à potência de " << pow << " é: " << result << endl;
+                return 0;
+                }
+        </code>
+    </pre>
+    <h2>Citações Simples (Sem quebra)</h2>
+    <p>Para colocar aspas (""), basta utilizar a tag &lt;q&gt;&lt;q&gt;, dá para colocar as aspas manualmente, mas a tag dá um sentido para a citação. Quando for uma citação, é importante que se use a tag &lt;q&gt;&lt;q&gt;, mas quando não for, pode ser colocado as aspas manualmnete mesmo.</p>
+    <q>Quem não se enfeita, por si, se rejeita.</q>
+    <h2>Citações complestas (com quebras)</h2>
+    <p>Para uma citação mais completa, é utilizada a tag &lt;blockquote&gt;&lt;blockquote&gt;, essa tag dá quebra de linha e deslocamento lateral. Pode ser adicionado na tag, um link doo endereço da citação, usando <i>cite</i>, visualmente, não acontece nada, mas os sistemas, sejam eles qual for, vai saber que essa frase ta referenciando o dono da citação. Por exemplo:</p>
+    <blockquote cite="https://br.images.search.yahoo.com/search/images;_ylt=AwrE.2JowwpjGcoYKpTz6Qt.;_ylu=Y29sbwNiZjEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=cita%C3%A7%C3%B5es+longas+de+fil%C3%B3sofos&fr2=piv-web&type=E211BR105G0&fr=mcafee">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis cumque nesciunt nobis dolorem nam sequi corporis natus, eaque sapiente saepe officia explicabo illo laborum recusandae quasi! Ex reiciendis commodi consequuntur!
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Para dizer ao usuário o que significa tal sigla, usamos a tag &lt;abbr&gt;&lt;abbr&gt; Exemplo:</p>
+    <p>É muito legal estudar <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.</p>
+    <h2>Texto invertido</h2>
+    <p>Com a tag &lt;bdo dir="ltr"&gt;texto&lt;/bdo&gt;A farse fica da direita para a esquerda (jeito normal).<bdo dir="ltr"> A Ana Luisa é gata</bdo></p>
+    <p>E com a tag &lt;bdo dir="rtl"&gt;texto&lt;/bdo&gt;A frase fica da esquerda para a direita.<bdo dir="rtl"> A Ana Luisa é gata</bdo></p>
+</body>
+</html>

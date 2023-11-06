@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'Work Sans' Arial, Helvetica, sans-serif;
+            /*Tem 3 tipos de fontes, porque o que o navegador não reconhecer, vai tentar outra. Isso se chama Safe Combinations. Sans-Serif significa que é fonte sem serifa, e todos os dispositivos tem fonte sem serifa. Serif é fonte serifada. Monoespace vai colocar uma fonte monoespaçada.*/
+
+            font-size: 1em;
+
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc = (Centímetro, milímetro, polegada, pixel, ponto, paica)
+            Existem telas de tamanhos diferentes, e nas fontes absolutas, um CM, um MM e um PX que eu coloco, pode ficar diferentes nos diversos dispositivos, PT e PC são medidas da tipografia, de papel e não é recomndável se utilizar em material impresso em tela.
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            (tamaho atual da fonte relativo ao m maúsculo de uma fonte. Altura x de uma fonte, relativo à altura x de uma fonte. Tipo EM mas relativo ao ruth. Largura da view port, porcentagem da largura da view port. Altura da view port. POrcentagem)
+
+            Recomendações da W3C: Para medidas de fonte-size, é recomendável o uso do PX e do EM. Não use os outros.
+
+            16px é o tamanho normal da fonte. 16px geralmente é igual a 1em. Nesse caso, 2em serial igual a 32px
+            1em é o tamaho normal da fonte.
+
+            Peso da fonte: PAra ver o peso da fone, não se pode usar as fontes normais, ou ela pe magrinha ou gordinha. Para olhar o peso da fonte, deve-se usar uma fonte que se chamar 'Work Sans'. Esta fonte não está no pc de ninguém, para ela poder ser utilizada, tem que colocar uma linha dentro do style. O peso da fonte é 'Font-weight'. Existem alguns pesos literias: 
+
+            lighter=Magrinho / Normal=Normal / Bold=Grossa / Bolder=Mais grossa ainda
+
+            Weight=Peso / Width=Largura / Height=Altura
+            */
+            font-weight: bold;/*Para Negrito ou deixar mais leve*/
+            font-style: italic;/*Para colocar como itálico*/
+            text-decoration: underline;/*Para sublinhar*/
+        }
+        h1{
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+
+             /*Essas 4 configurações acima, são as que mais são utilizadas. Para essas 4 configurações ficarem em uma configuração só, é usado o SHORTHAND (são várias linhas em uma linha só, mas não é pssível usar isso com todos os códigos.)FONT, na seguinte ordem:
+        
+             font-style -> font-weight -> font-size -> font-family
+
+            Abaixo, veja como vou aplicar:
+            */
+            font:italic bolder 3em 'work sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'work sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis unde quae adipisci, cumque quaerat, quas magni ullam dolore eveniet reprehenderit animi aliquam perspiciatis velit voluptatum distinctio id voluptate. Nobis, nisi.lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem nihil temporibus sequi est nobis, omnis quaerat expedita maiores eligendi dolorem, illum quibusdam! Nemo quia obcaecati odit quis eligendi magni excepturi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum similique sint enim facere minima tempora odit cupiditate repudiandae, accusamus omnis dolorum, nobis minus alias voluptatum eum ullam quibusdam veritatis. Vitae!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo tenetur alias labore, debitis ipsum magnam soluta! A consequatur, nemo distinctio laudantium quae esse quisquam illo doloremque! Aspernatur debitis unde eum!</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat fugiat aliquid explicabo maxime, rerum deserunt ratione saepe totam est dolore nemo eligendi voluptatum provident ut asperiores, numquam molestiae. Nemo, architecto.</p>
+</body>
+</html>

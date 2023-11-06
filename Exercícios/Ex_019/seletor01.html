@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores Personalizados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="principal" class="destaque">Criando sites com   HTML e CSS</h1>
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML Básico</h2>
+    <h3>Seletor id</h3>
+    <p>Para colocar um seletor ID em determinado elemento, quando tem muitos elementos iguais, basta, dentro da tag, colocar uma identificação. Ex:</p>
+    <p><code>&lt;h1 id="principal"&gt;Criando sites com   HTML e CSS&lt;/h1&gt;</code></p>
+    <p>Aí, dentro do CSS externo, fica assim:</p>
+    <pre>
+        <code>
+            /*h1 sem identificação*/
+            h1{
+                color: #7cc083;
+            }
+            /*h1 que foi identificado com o nome <i>principal</i>*/
+            #principal{
+                color: #13678A;
+                text-align: center;
+            }
+        </code>
+    </pre>
+    <h3>Seletor class</h3>
+    <p>Quando eu tenho 2 elementos e quero aplicar a mesma configuração nos dois, não posso usar id, vou usar class. Que também faz configuração personalizada, mas eu posso colocar vários elementos com a mesma classe, ao contrário do id que posso colocar só um. IMPORTANTE: Não dê nome para suas classes pela forma mas sim pela funcionalidade.É possível também colocar mais de uma class no mesmo elemento. basta separar com espaço. como está no <i>h2 css avançado</i>. Também pode colocar class junto com id, mas o id sobrepõe as configurações de class. Como colocar class, ex:</p>
+    <code>&gt;h2 class="intermediario"&lt;HTML Intermediário&gt;/h2&lt;</code>
+    <p>Dentro do css, fica assim:</p>
+    <pre>
+        <code>
+            .intermediario{
+                color: #cddd41;
+            }
+        </code>
+    </pre>
+    <P>Lorem ipsum dolor sit amet, consectetur <span class="basico">adipisicing elit</span>. Inventore est exercitationem non eveniet dolorem optio consectetur officia iure ipsam dicta in ipsum, veniam neque cumque asperiores quaerat alias molestias ducimus.</P>
+    <h2 class="intermediario">HTML Intermediário</h2>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore est exercitationem non eveniet dolorem optio consectetur officia iure ipsam dicta in ipsum, veniam neque cumque asperiores quaerat alias molestias ducimus.</P>
+    <h2 class="avançado">HTML Avançado</h2>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore est exercitationem non eveniet dolorem optio consectetur officia iure ipsam dicta in ipsum, veniam neque cumque asperiores quaerat alias molestias ducimus.</P>
+    <h1 class="destaque">Aprendendo CSS</h1>
+    <h2 class="basico">CSS Básico</h2>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore est exercitationem non eveniet dolorem optio consectetur officia iure ipsam dicta in ipsum, veniam neque cumque asperiores quaerat alias molestias ducimus.</P>
+    <h2 class="intermediario">CSS Intermediário</h2>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore est exercitationem non eveniet dolorem optio consectetur officia iure ipsam dicta in ipsum, veniam neque cumque asperiores quaerat alias molestias ducimus.</P>
+    <h2 class="avançado destaque">CSS Avançado</h2>
+    <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore est exercitationem non eveniet dolorem optio consectetur officia iure ipsam dicta in ipsum, veniam neque cumque asperiores quaerat alias molestias ducimus.</P>
+</body>
+</html>

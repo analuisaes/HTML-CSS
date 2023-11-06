@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>No html5, os padroes mais utilizados e mais suportados, são os formatos: MP4 M4V, WEBM, OGV. O ideal é que se tenha vários arquivos de vários formatos.</p>
+    <p>Dica de Ouro: Se o vídeo for grande, converter ele para menor no aplicativo <i>HandBrake</i> </p>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video src="videos/videopraiapordosol.mp4" width="500" controls></video>
+    <p>Qual tag colocar? &gt;video&lt; e os parâmetros <i>width</i> para tamanho (recomendado 500), <i>controls</i> para aparecer o controle</p>
+    <video src="videos/videospraia.mp4" width="500" controls></video>
+    <p>Para o site com toda certeza abrir em vários navegadores diferentes, é importamte colocar vários formatos de vídeo em ordem crescente, dentro da tag &lt;video controls&gt;, colocar a tag &gt;source src type&lt;</p>
+    <video controls autoplay loop width="560">
+        <source src="videos/videopraiapordosol.mp4" type="video/mp4">
+        <p>Aí aqui em baixo colocar outros formatos de vídeos que foram convertidos no HandBrake. <i>M4V</i> e <i>OGG</i> são os mais usados. Para por a capa desejada no vídeo, basta pr o parâmetro <i>poster=""</i> e selecionar a capa desejada que deve estar dentro da pasta do site. e colocar a mensagem em baixo caso nenhum dos vídeos seja compátivel com o navegador. Quanto mais sources for colocado, maior vai ser a chance de vários navegadores conseguirem abrir seu vídeo dos usuários, mas vídeos hospedados desta forma vai pesar muito no seu site e gerar custos maiores para seu cliente.</p>
+        <p>Seu navegador não tem compatibilidade com reprodução desses vídeos. </p>
+    </video>
+    <h1>Inserindo vídeos do YouTube</h1>
+    <p>Para inserir vídeos do YouTube, bata ir no vídeo que vocee deseja, selecionar "compartilhar" e depois "incorporar", Já vai ser te dado o código em html pronto para ser colocado no seu site. Aí não consome o site do seu servidor, mas sim, do YouTube, economizando bastante pro seu cliente e para você. Uma coisa legal é criar um canal no YouTube e colocar o vídeo desejado lá. Lembre-se que se deve colocar vídeos com direitos autorais. Um site legal para hospedar vídeos também, além do YouTube, é o Vimeo, nele é possível escolher se você quer que o vídeo seja público ou privado, diferente do YouYube, que só é possivel pegar um código de vídeo se o mesmo estiver público, lembrando que o vimeo é pago mas tem bem mais profissionalização. No YouTube aparece também outros vídeos como opção assim que o vídeo é pausado, já no Vimeo não. No vímeo tem limitação de videos para poderem ser usados. NO YouTube qualquer pesssoa pode ver seu vídeo. Lembre-se sempre dos Direitos Autorais.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rsj_z43oNRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>

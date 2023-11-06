@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="archive.ico.ico" type="image/x-icon">
+    <title>Formatação de textos</title>
+    <style>
+        mark{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito/Destaque</h2>
+    <p>Nessa frase temos um <b>termo em negrito</b> usando a tag &lt;b&gt;&lt;/b&gt; (não semântica - não tem significado).</p>
+    <p>Nessa frase temos um <strong>termo em destaque</strong> usando a tag &lt;strong&gt;&lt;/strong&gt; (semântica, tem significado de destaque).</p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nessa frase temos um <i>termo em itálico</i> usando a tag &lt;i&gt; (não semântica).</p>
+    <p>Nessa frase temos um <em>termo em ênfase</em> usando a tag &lt;em&gt; (semântica).</p>
+    <h3>IMPORTANTE:</h3>
+    <p>Semântica é algo com significado, recomendado o uso no HTML. Não semântica é algo só com forma recomendado o uso no CSS.</p>
+
+    <h2>Texto marcado</h2>
+    <p>Podemos criar um <mark>texto marcado</mark> usando a tag &lt;mark&gt;</p>
+    <p>Para mudar a <mark style="background-color: #eb3797;" >cor do marcador</mark>, como é uma coisa específica, pode simplesmente ser usado dentro da tag &lt;mark&gt; um parâmetro <i>style</i> e selecionando a cor. (usar essa técnica mais para coisa específica) </p>
+    <p>Para <mark>colocar</mark> uma maior parte de <mark>palavras</mark> selecionadas em destaque, o ideal é dar um comando só, para isso, tem que usar o <mark>CSS</mark> com o comando &lt;style&gt;, dentro da tag &lt;head.&gt;</p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Para criar um <big>texto grande</big> usamos as tags &lt;big&gt;&lt;big&gt;</big>. Já para criar um <small>texto pequeno</small>, usamos a tag &lt;small&gt;&lt;small&gt;</p>
+    <h2>Texto deletado</h2>
+    <p>POdemos marcar um <del>texto como excluido</del>, para indicar que que ele ppode ser lido, mas não considerado usando as tags &lt;del&gt;&lt;del&gt;</p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um <ins>texto como inserido</ins> para dar uma ênfase de que ele fo adicionado depois, usando as tags &lt;ins&gt;&lt;ins&gt;</p>
+    <p>tag também é sublinhada mas não é como a tag &lt;u&gt;&lt;u&gt;. A tag &lt;del&gt;&lt;del&gt;é semântica (com significado) e a tag &lt;u&gt;&lt;u&gt; é não semântica (Não tem significado).</p>
+    <h2>Texto subescrito</h2>
+    <p>Para iserir coisas do tipo X<sup>2</sup>*3 para elevar o x ao quadrado, devemos usar a tag &lt;sup&gt;&lt;sup&gt;</p>
+    <h2>Texto sobreescrito</h2>
+    <p>Já para coisas do tipo H<sub>2</sub>O, para colocar o 2 sobre o H, devemos utilizar a tag &lt;sub&gt;&lt;sub&gt;</p>
+</body>
+</html>

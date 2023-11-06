@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos Externos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS</h1>
+    <h2>Estilos Externos</h2>
+    <p>Com esta técnica, o estilo vai ser cirado em outro arquivo. Para fazer isso, basta em baixo da tag title, por a tag &gt;link:css&lt;.</p>
+    <code>
+        &gt;link rel="stylesheet" href="style.css"&lt;
+    </code>
+    <p>Também pode ser criado outro arquivo CSS para criar estilos extras.</p>
+    <h1>Capitulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam deserunt reprehenderit omnis. Blanditiis ipsam, incidunt reprehenderit asperiores maiores temporibus magni aut adipisci atque rerum excepturi, culpa cupiditate eveniet. Sapiente, animi? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ut laboriosam a odit. Ipsam repudiandae dicta reiciendis similique, quibusdam blanditiis inventore modi laborum perspiciatis architecto vero repellat labore deleniti accusamus.</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, vel adipisci placeat laboriosam maxime vero veniam libero similique mollitia, error dicta fugit est debitis, facere consequuntur nemo! Nostrum, laborum iste?Lorem ipsum dolor sit amet, consectetur adipisicing elit. At aspernatur iure modi saepe aperiam deleniti fugit reprehenderit nostrum laborum praesentium recusandae quisquam nobis culpa tempore, rem voluptate temporibus provident nemo.</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, facere? Voluptatem inventore nemo maxime ea dolores consequatur veritatis optio iste possimus, iure dolor, quis, laboriosam architecto illum similique adipisci perspiciatis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vel enim laborum id eum. Sit eaque maiores libero et reiciendis. Nobis corrupti ex atque officia quam autem perspiciatis beatae ea?</p>
+    <ul>
+        <h2>Algumas tags em CSS</h2>
+        <li>"color:cor;" --> Para colorir a fonte</li>
+        <li>"background-color:cor;" (dentro do body) --> Para colorir o fundo da página</li>
+        <li>"font-family:fonte;" --> Para definir a fonte</li>
+        <li>"text-align:comando;" --> Para arrumar o texto de forma centralizada, justificada, mais para esquerda ou mais para a direita</li>
+        <li>"font-size: px;" --> Para aumentar o tmanho da fonte base</li>
+        <li>"font-size: em;" --> Para diminuir o tamanho da fonte</li>
+        <li>"background-color:cor;" (dentro dos títulos e subtítulos ou textos) --> Para mudar a cor de fundo do texto.</li>
+    </ul>
+    <p><a href="pagina02.html" target="_self">Ir para a página 2</a></p>
+    <p>Para criar um arquivo, segurar a tecla CTRL+Clicar no link. Vai dar um erro e você seleciona criar arquivo</p>
+    <p>Lá dentro do arquivo CSS, é possível por algumas regras utilizando @ e selecionando opções, por exemplo, para o css aceitar acentuações (se for um css mais avançado)</p>
+    <code>@charset "UTF-8";</code>
+    <p>Evite ao máximo usar o estilo inline, use mais este ou o local, use o inline somente se for uma configuração bem pontual, exatamente para aquele arquivo, aquela página, mas ainda assim, dê preferência para este CSS externo ou o local. Acima, vou usar o CSS local também, além do externo, assim, vai ser estilizada só esta página. Se fosse utilizada no CSS externo, mudaria todas as páginas..Usei a seguinte tag:</p>
+    <pre>
+        <code>
+            &gt;style&lt;
+                h1{
+                    text-decoration: underline;
+                }
+            &gt;/style&lt;
+        </code>
+    </pre>
+    <p style="text-align: right; text-align: right">Caso queira estilizar somente uma coisa, só um parágrafo ou só um título por exemplo, aí pode ser usado o CSS inline. como está feito neste parágrafo. Usei este código para este texto ser alinhado para a direita:</p>
+</body>
+</html>

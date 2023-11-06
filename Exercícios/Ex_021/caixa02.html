@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightsalmon;
+            margin:0px;
+        }
+        header{
+            background-color: salmon;
+            padding: 10px;
+            margin:10px
+        }
+        main{
+            background-color: salmon;
+            padding: 10px;
+            border-radius: 10px 0px;
+            /*10px e 0px é configuração de xima e de baixo.*/
+            box-shadow: 4px 4px 9px 0px black;
+            margin: 10px;
+        }
+        footer{
+            background-color: salmon;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin:0px
+        }
+        footer > p{
+            margin: 0px;
+        }
+        article{
+            background-color: rgb(233, 144, 132);
+            padding: 5px;
+        }
+        article > aside{
+            background-color: rgb(214, 147, 138);
+        }
+        nav{
+            background-color: rgb(214, 147, 138);
+            padding: 0px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.151); /*Para sombra na caixa, em "inspecionar" dá para melhor configurar*/
+            /*Dá para criar a sombra direto no "inspecionar", selecionando nav -> 3 pontinhos -> ass box-shadow. é só arrastar a bolinha de acordo com o que te agradar mais. copiar as configurações de lá e coar aqui.*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        div#bola{
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: 10px;
+            border-radius: 50%;/*50% faz virar uma bola*/
+        }
+    </style>
+</head>
+<body>
+    <!--header, nav, main, footer, action, article são divs(box-level) com semântica, antigamente, usava sí div, div, div, mas agora tem outras tags, que são como se fossem divs, a diferença é que agora elas tem significadoe fazem mais sentido no site-->
+    <header><!--Cabeçalho-->
+        <h1>Meu Site</h1>
+        <nav><!--Seria um menu para colocar os links de navegação-->
+            <a href="caixa01.html">Link</a>
+            <a href="caixa01.html">Link</a>
+            <a href="caixa01.html">Link</a>
+            <a href="caixa01.html">Link</a>
+            <a href="caixa01.html">Link</a>
+        </nav>
+    </header>
+    <main><!--Conteúdo principal-->
+        <section id="assuntos"><!--Sessão-->
+            <p>Esportes - Políticas - Tecnologias</p>
+        </section>
+        <section id="notícias">
+            <article><!--Artigo-->
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ullam esse alias culpa? Ratione, id animi ipsum debitis quo velit perferendis eum ex, suscipit labore non? Ut reiciendis aut quaerat?</p>
+                <aside><!--Conteúdo periférico do artigo-->
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer><!--Rodapé-->
+        <p>Desenvolvido pelo Curso em Vídeo</p>
+    </footer>
+    <!--Isso tudo não deixa o site já pronto e bonito, mas dá uma boa estrutura para ele.-->
+    <div id="bola"></div>
+</body>
+</html>
