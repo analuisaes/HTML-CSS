@@ -1,0 +1,49 @@
+<!DOCTYPE html> <!--"!" cria o código base-->
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de imagem de fundo</title>
+    <style>/*estilo do site*/
+
+        body{
+            background-image: url(imagens/wallpaper001.jpg); /*imagem de fundo no corpo inteiro*/
+        }
+
+        .quadrado{ /*configurações de class*/
+            display: inline-block; /*fica uma caixa do lado da outra*/
+            border: 2px solid black; /*borda*/
+            border-radius: 10px; /*são as pontas dos quadrados*/
+            background-color: lightgray; /*cor de fundo do quadrado*/
+            width: 300px; /*largura*/
+            height: 300px; /*altura*/
+        }   
+
+        div#q1{ /*configurações do id*/
+            background-color: skyblue; /*cor de fundo do quadrado*/
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, yellow, red); /*degradê de cima para baixo*/
+        }
+
+        div#q3{
+            background-image: url(imagens/pattern003.png); /*imagem de fundo*/
+        }
+
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"> <!--o "class" facilita na hora de programar no css--> 
+
+    </div>
+
+    <div class="quadrado" id="q2"> <!--o "id" facilita na hora de programar no css-->
+
+    </div >
+
+    <div class="quadrado" id="q3">
+
+    </div>
+</body>
+</html>
